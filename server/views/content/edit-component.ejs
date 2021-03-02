@@ -1,0 +1,38 @@
+<div class="row justify-content-md-center">
+    <div class="col-8">
+        
+        <form method="POST">
+            <div class="form-group">
+              <label for="partID">Name</label>
+              <input type="text" class="form-control" id="partID" aria-describedby="partID" 
+              name="partID" placeholder="Enter Name" value="<%=data.partID %>"
+              required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Phone Number</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" 
+                name="name" placeholder="Enter Phone Number"  value="<%=data.name %>"
+                required>
+              </div>
+              
+              <div class="form-group">
+                <label for="description">Address</label>
+                <textarea class="form-control" id="description" rows="3"
+                name="description" placeholder="Enter Address" 
+                required><%=data.description %></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="price">Email</label>
+                <input type="text" class="form-control" id="price" aria-describedby="price" 
+                name="price" placeholder="Enter Email" value="<%=data.price %>"
+                required>
+              </div>
+            
+            <button type="submit" class="btn btn-primary btn-lg"><i class="fas fa-edit"></i> Edit Contact</button>
+            <a href="/component-list" class="btn btn-warning btn-lg"><i class="fas fa-undo"></i> Cancel</a>
+          </form>
+
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<!--Header-->
+<!--Main Content-->
+<main class="container">
+      
+    <% if (title == "Home") { %>
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-6">Welcome to my <%= title %> page</h1>
+        <%- include ../content/home.ejs %>              
+    </div>
+    </div>            
+
+    <% }  else if(title == "About"){ %>
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-6">Welcome to my <%= title %> page</h1>
+          <%- include ../content/about.ejs %>
+    </div>
+    </div>
+          
+
+      <% }  else if(title == "Projects"){ %>
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-6">Welcome to my <%= title %> page</h1>
+          <%- include ../content/projects.ejs %>
+    </div>
+    </div>
+
+   <% } else if(title == "Services"){ %>
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-6">Welcome to my <%= title %> page</h1>
+        <%- include ../content/services.ejs %>    
+    </div>
+    </div>   
+        
+    <% } else { %>
+   <% } %>
+    
+       
+
+</main>
+
