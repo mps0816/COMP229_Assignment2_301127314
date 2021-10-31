@@ -1,8 +1,3 @@
-/*File name : businessContact.js
-  Author's name : Christina May Pakingan
-  Student ID : 301121940
-  Web site name : Christina Pakingan
-  date : February 28, 2021*/
 
 let express = require('express');
 let router = express.Router();
@@ -21,7 +16,7 @@ module.exports.displayContactList = (req, res, next) => {
         }
         else
         {
-            res.render('businessContact/list', {title: 'Business Contact List', 
+            res.render('businessContact/list', {title: 'Component List', 
             ContactList: contactList,
             displayName: req.user ? req.user.displayName : ''});
         }

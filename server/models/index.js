@@ -1,8 +1,4 @@
-/*File name : index.js
-  Author's name : Noushig Chitjian
-  Student ID : 301117936
-  Web site name : NC
-  date : Oct 22, 2020 */
+
 
 let express = require('express');
 let router = express.Router();
